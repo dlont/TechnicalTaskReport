@@ -8,6 +8,7 @@
 \usepackage{graphicx}  % needed for figures
 \usepackage{dcolumn}   % needed for some tables
 \usepackage{draftwatermark}	%needed for watermarking
+\usepackage[toc,page]{appendix}	% needed for butification of appendices
 
 \usepackage[left=2.00cm, right=2.00cm]{geometry}
 
@@ -27,6 +28,24 @@
 
 \input{abstract}
 
+\tableofcontents
+
 \input{introduction}
+
+\section{Tracking and alignment algorithms}
+
+\input{eqmotion}
+
+\subsection{Kalman Filter}
+\subsection{General Broken Line track refit}
+\subsection{MILLIPEDE II}
+
+\section{Test cases}
+\subsection{No magnetic field data}
+\subsection{Magnetic field data}
+
+\begin{appendices}
+\section{C++ API} \label{app:cppapi}
+\end{appendices}
 
 \end{document}
