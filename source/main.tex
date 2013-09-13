@@ -1,9 +1,18 @@
 \documentclass[a4paper,10pt]{article}
 
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
 \usepackage{lineno}    % needed for line numbers
 \usepackage{graphicx}  % needed for figures
 \usepackage{dcolumn}   % needed for some tables
+\usepackage{draftwatermark}	%needed for watermarking
+
+\usepackage[left=2.00cm, right=2.00cm]{geometry}
+
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{5}
 
 %opening
 \title{Application of General Broken Line track refit for tracking and alignment of DESY telescopes}
@@ -17,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-
+This document describes algorithms for charged particles tracking implemented in EUTELESCOPE software package.
 \end{abstract}
 
 \input{introduction}
