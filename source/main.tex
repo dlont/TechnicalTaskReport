@@ -4,23 +4,31 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
-\usepackage{lineno}    % needed for line numbers
+% \usepackage{lineno}    % needed for line numbers
 \usepackage{graphicx}  % needed for figures
 \usepackage{dcolumn}   % needed for some tables
-\usepackage{draftwatermark}	%needed for watermarking
-\usepackage[toc,page]{appendix}	% needed for butification of appendices
+% \usepackage{draftwatermark}	%needed for watermarking
+\usepackage[toc,page]{appendix}	% needed for beutification of appendices
 
 \usepackage[left=2.00cm, right=2.00cm]{geometry}
 
-\SetWatermarkText{DRAFT}
-\SetWatermarkScale{5}
+% \SetWatermarkText{DRAFT}
+% \SetWatermarkScale{5}
 
 %opening
 \title{Application of General Broken Line track refit for tracking and alignment of DESY telescopes}
 \author{Denys Lontkovskyi\\University of Hamburg, DESY}
 \date{13 September 2013}
 
-\linenumbers
+%%%%%%%%%%%%%%%%%%%%% Definitions
+%%%% HEP units
+\newcommand{\cm}{\text{cm}}
+\newcommand{\Tesla}{\text{T}}
+\newcommand{\GeV}{\text{GeV}}
+\newcommand{\GeVoverC}{\text{GeV/c}}
+
+
+% \linenumbers
 
 \begin{document}
 
@@ -47,5 +55,8 @@
 \begin{appendices}
 \section{C++ API} \label{app:cppapi}
 \end{appendices}
+
+\bibliographystyle{plain}
+\bibliography{bibliography/bibl}
 
 \end{document}
